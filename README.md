@@ -2,14 +2,23 @@
 
 in you settings.py:
 
+
 REST_FRAMEWORK = {
+
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.LimitOffsetPagination',
+    
     'PAGE_SIZE': 20,
+    
     'limit' : 5,
+    
     'DEFAULT_FILTER_BACKENDS': (
+    
         'django_filters.rest_framework.DjangoFilterBackend',
+        
     ),
+    
     'ORDERING_PARAM' : 'sort',
+    
 }
 
 To upload sampledata.json in your database (Postgresql recommended), run this command:
