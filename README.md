@@ -1,7 +1,14 @@
 # Django-Restful-API-Filter-Ordering-Viewsets
 
 in you settings.py:
-
+INSTALLED APPS:
+..
+..
+'dataAPIapp',
+'rest_framework',
+'django_filters',
+.
+.
 
 REST_FRAMEWORK = {
 
